@@ -1,4 +1,4 @@
-const CACHE = 'homepage-v1';
+const CACHE = 'homepage-v2';
 const ASSETS = ['./', './index.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {

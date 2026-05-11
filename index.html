@@ -105,6 +105,62 @@
     .link-label {
       font-size: 12px;
     }
+
+    #values {
+      display: flex;
+      gap: 24px;
+      max-width: 860px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .values-title {
+      color: #ccc;      
+    }
+
+    .value-card {
+      flex: 1;
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 20px 22px;
+      min-width: 0;
+    }
+
+    .value-card h2 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 14px;
+    }
+
+    .value-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .value-card li {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #c0c0c0;
+      padding-left: 12px;
+      position: relative;
+    }
+
+    .value-card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #555;
+    }
   </style>
 </head>
 <body>
@@ -144,6 +200,37 @@
       <div class="link-icon">HN</div>
       <span class="link-label">HN</span>
     </a>
+  </div>
+
+  <h1 class="values-title">Values</h1>
+  <div id="values">
+    <div class="value-card">
+      <h2>Care for Others</h2>
+      <ul>
+        <li>Listen first - seek to understand before offering solutions.</li>
+        <li>Acknowledge how your actions and decisions affect others, both inside and outside the team.</li>
+        <li>Speak and act with respect - regardless of role, seniority, or situation.</li>
+        <li>Build trust through consistency: say what you mean, do what you say.</li>
+      </ul>
+    </div>
+    <div class="value-card">
+      <h2>Take Ownership</h2>
+      <ul>
+        <li>Step in when something needs to move, even if it's not "your job".</li>
+        <li>Come with a proposed solution when you raise a problem.</li>
+        <li>Close the loop - follow up until things are truly done.</li>
+        <li>Hold yourself accountable to outcomes, not just effort.</li>
+      </ul>
+    </div>
+    <div class="value-card">
+      <h2>Make it Better</h2>
+      <ul>
+        <li>Debrief after projects - what worked, what didn't, and why.</li>
+        <li>When the same problem repeats, build a system to prevent it.</li>
+        <li>Share what you've learned - good ideas grow when they spread.</li>
+        <li>Question how things are done today - even when they're working.</li>
+      </ul>
+    </div>
   </div>
 
   <script>
